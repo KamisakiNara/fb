@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome CSS Responsive Navigation menus </title>
+    <title>Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../../fontawesome/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
     <header>
         <input type="checkbox" name="" id="chk1">
-        <div class="logo"><h1>Web Master</h1></div>
+        <div class="logo"><h1>Yow watsup</h1></div>
         <div class="search-box">
             <form action="">
                 <input type="text" name="search" id="srch" placeholder="Search">
@@ -35,23 +35,46 @@
         </div>
     </header>
     <div id="main-content">
-            <?php 
-            if(!isset($_GET['modul'])){
-                include "home.php";
-            } else {
-                $pages=$_GET['modul'];
-                if($pages == "home"){
-                include "home.php";
-                } if($pages == "product"){
-                    include "product.php";
-                } if($pages == "blog"){
-                    include "blog.php";
-                } if($pages == "contact"){
-                include "contact.php";
-                }
-                    
-            }
-        ?>
+    <?php 
+    if(isset($_GET['modul'])){
+        $pages = $_GET['modul'];
+    } else {
+        $pages = "home";
+    }
+                
+    if(!isset($_GET['modul']) || $pages == "home"){
+    ?>
+    <div id="content-home">
+    <h1>Title Home</h1>
+    <p> Ini halaman pertama<br>
+    Have a great day all</p>
+    </div>
+
+    <?php
+    } if ($pages == "product"){
+    ?>
+    <div id="content-product">
+    <h1>Title Product</h1><br>
+    </div>
+
+    <?php
+    } if ($pages == "blog"){
+    ?>
+    <div id="content-blog">
+    <h1>Title Blog</h1>
+    </div>
+
+    <?php
+    } if ($pages == "contact"){
+    ?>
+    <div id="content-contact">
+    <h1>Title Contact</h1>
+    </div>
+
+    <?php
+    }
+    ?>
+         
     </div>
 </body>
 </html>
