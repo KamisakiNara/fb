@@ -54,7 +54,46 @@
     } if ($pages == "product"){
     ?>
     <div id="content-product">
-    <h1>Title Product</h1><br>
+    <h1>Title Product</h1>
+    <a href="index.php?modul=product1">Product1</a>
+    <a href="index.php?modul=product2">Product2</a>
+    <a href="index.php?modul=product3">Product3</a>
+    </div>
+
+    <?php
+    } if ($pages == "product1") {
+    ?>
+    <div id="content-product1">
+        <h1>Produk Olahraga</h1>
+        <ul>
+            <li>Bola</li>
+            <li>Matras</li>
+            <li>Tongkat</li>
+        </ul>
+    </div>
+
+    <?php
+    } if ($pages == "product2") {
+    ?>
+    <div id="content-product2">
+        <h1>Produk Elektronik</h1>
+        <ul>
+            <li>Kipas</li>
+            <li>Televisi</li>
+            <li>Kosmos</li>
+        </ul>
+    </div>
+
+    <?php
+    } if ($pages == "product3") {
+    ?>
+    <div id="content-product3">
+        <h1>Produk Furnitur</h1>
+        <ul>
+            <li>Meja</li>
+            <li>Kursi</li>
+            <li>Lemari</li>
+        </ul>
     </div>
 
     <?php
@@ -69,6 +108,15 @@
     ?>
     <div id="content-contact">
     <h1>Title Contact</h1>
+    <a href="index.php?modul=aboutme">Tentang saya</a>
+    </div>
+
+    <?php
+    } if ($pages == "aboutme") {
+    ?>
+    <div id="content-about">
+        <h1>Tentang Saya</h1>
+        <label>Nama saya Muhammad Raihan Syahfitrah</label>
     </div>
 
     <?php
