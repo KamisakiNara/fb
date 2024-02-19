@@ -69,6 +69,7 @@
             <li>Bola</li>
             <li>Matras</li>
             <li>Tongkat</li>
+            <li><a href="index.php?modul=product">Klik disini untuk kembali ke halaman Produk</a></li>
         </ul>
     </div>
 
@@ -81,6 +82,7 @@
             <li>Kipas</li>
             <li>Televisi</li>
             <li>Kosmos</li>
+            <li><a href="index.php?modul=product">Klik disini untuk kembali ke halaman Produk</a></li>
         </ul>
     </div>
 
@@ -93,6 +95,7 @@
             <li>Meja</li>
             <li>Kursi</li>
             <li>Lemari</li>
+            <li><a href="index.php?modul=product">Klik disini untuk kembali ke halaman Produk</a></li>
         </ul>
     </div>
 
