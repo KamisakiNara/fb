@@ -20,7 +20,7 @@ header{
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: rgba(0, 0, 0, 0.5);
+    background: #3A3B3C;
 }
 #chk1{
     display: none;
@@ -47,7 +47,7 @@ header .search-box{
     outline: none;
     background: #f2f2f2;
     border-radius: 30px;
-    color: gray;
+    color: #3A3B3C;
     font-size: 16px;
     text-align: center;
     padding-left: 5px;
@@ -121,8 +121,8 @@ header .menu{
 }
 #main-content{
     /* border: 2px solid black; */
-    padding: 10px;
-    padding-left: 10px;
+    /* padding: 10px; */
+    /* padding-left: 10px; */
     width: 100%;
     height: auto;
     margin-top: 100px;
@@ -134,5 +134,30 @@ header .menu{
     color: rgb(37, 19, 139);
 }
 #content-contact h1{
-    color: rgb(221, 19, 19);
+    color: #E0E5E5;
+    margin-top: -50px;
+    padding-top: 10px;
+}
+.test{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.test label{
+    flex-basis: 22%;
+}
+.test span {
+    position: absolute;
+    bottom: 9px;
+    right: 16px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+.test span i{
+    color: seagreen;
 }
