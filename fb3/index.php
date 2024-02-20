@@ -23,8 +23,8 @@
                     <input class="form-control" id="lastName" type="text" placeholder="Input your last name">
                 </div>
                 <div class="col-8 col-md-8 mb-3">
-                    <label for="rollNo">Number</label>
-                    <input class="form-control" id="rollNo" type="text" placeholder="Input your Roll Number">
+                    <label for="rollNo">Roll Number</label>
+                    <input class="form-control" id="rollNo" type="tel" placeholder="Input your Roll Number">
                 </div>
                 <div class="col-8 col-md-8">
                     <input class="btn btn-success add-btn" type="submit" value="Submit">
@@ -39,7 +39,7 @@
                                 <th>Actions</th>
                             </tr>
                         </thead>
-                        <tbody class="student-list">
+                        <tbody id="student-list">
                         <tr>
                             <td>Dear</td>
                             <td>Programmer</td>

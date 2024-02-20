@@ -3,7 +3,7 @@ var selectedRow = null;
 // Show alerts
 function showAlert(message, className){
     const div = document.createElement("div");
-    div.className = 'alert alert-${classname}';
+    div.className = 'alert alert-' + className;
 
     div.appendChild(document.createTextNode(message));
     const container = document.querySelector(".container");
@@ -25,9 +25,9 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
     //Get form values
-    const firstName = document.querySelector("#firstName").value = "";
-    const lastName = document.querySelector("#lastName").value = "";
-    const rollNo = document.querySelector("#rollNo").value = "";
+    const firstName = document.querySelector("#firstName").value;
+    const lastName = document.querySelector("#lastName").value;
+    const rollNo = document.querySelector("#rollNo").value;
 
     //validate
     if(firstName == "" || lastName == "" || rollNo == ""){
@@ -46,13 +46,13 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
                 <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
                 </td>
             `;
-            list.appendChild("row");
+            list.appendChild(row);
             selectedRow = null;
             showAlert("Student Added", "success");
         } else {
             selectedRow.children[0].textContent = firstName;
             selectedRow.children[1].textContent = lastName;
-            selectedRow.children[2].textContent = rollName;
+            selectedRow.children[2].textContent = rollNo;
             selectedRow = null;
             showAlert("Student Info Edited", "info");
         }
@@ -65,9 +65,10 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
 document.querySelector("#student-list").addEventListener("click", (e) => {
     target = e.target;
     if(target.classList.contains("edit")){
-        document.querySelector("#firstName").value = selectedRow.children[0];
-        document.querySelector("#lastName").value = selectedRow.children[1];
-        document.querySelector("#rollNo").value = selectedRow.children[2];
+        selectedRow = target.parentElement.parentElement;
+        document.querySelector("#firstName").value = selectedRow.children[0].textContent;
+        document.querySelector("#lastName").value = selectedRow.children[1].textContent;
+        document.querySelector("#rollNo").value = selectedRow.children[2].textContent;
     }
 });
 
