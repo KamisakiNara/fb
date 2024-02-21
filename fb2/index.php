@@ -233,7 +233,7 @@ function validateNum() {
 }
 
 function validateForm() {
-    if (!validatefName() || !validatelPhone() || !validateNum()) {
+    if (!validatefName() || !validatelName() || !validateNum()) {
         submitError.style.display = 'block';
         submitError.innerHTML = 'Please check the error before submit';
         setTimeout(function () { submitError.style.display = 'none'; }, 3000);
