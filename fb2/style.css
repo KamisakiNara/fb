@@ -36,6 +36,9 @@ header .logo{
     text-transform: uppercase;
     font-size: 15px;
 }
+header .logo h1 {
+    margin-left: -20px;
+}
 header .search-box{
     flex: 1;
     position: relative;
@@ -136,7 +139,7 @@ header .menu{
 #content-contact h1{
     color: #E0E5E5;
     margin-top: -50px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .test{
     width: 100%;

@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-8 col-md-8 mb-3 test">
                     <label for="rollNo">Absent Number</label>
-                    <input class="form-control" id="rollNo" type="tel" placeholder="Input your Roll Number" name="number" onkeyup="validateNum()">
+                    <input class="form-control" id="rollNo" type="tel" placeholder="Input your absent number" name="number" onkeyup="validateNum()">
                     <span id="num-error">Number Required</span>
                 </div>
                 <div class="col-8 col-md-8">
