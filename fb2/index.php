@@ -111,10 +111,10 @@
     <?php
     } if ($pages == "contact"){
     ?>
-    <div id="content-contact" style="color: white; background-color: #1d2630;">
+    <div id="content-contact" style="color: white; background-color: #2B3856;">
     <div class="container mt-5">
         <div class="text-center">
-            <h1 class="display-5 mb-5"><strong>About Us</strong></h1>
+            <h1 class="display-5 pt-4 mb-4 fw-bold "><strong>About Us</strong></h1>
         </div>
         <div class="main row justify-content-center">
             <form action="" id="student-form" target="_self" enctype="multipart/form-data" class="row justify-content-center mb-4" autocomplete="off">
@@ -163,7 +163,7 @@
             </form>
         </div>
     </div>
-    <div><a href="index.php?modul=aboutme" class="btn btn-success">Tentang saya</a></div>
+    <div><a href="index.php?modul=aboutme" class="col-md-2 btn btn-success">Tentang saya</a></div>
     </div>
     
 
