@@ -22,18 +22,18 @@
             <h1>Kalkulator sederhana</h1>
             <div>
                 <label for="numa">Bilangan - A</label><br>
-                <input type="number" id="num1" required>
+                <input type="number" id="num1" required><br><br>
             </div>
             <div>
                 <label for="numb">Bilangan - B</label><br>
-                <input type="number" id="num2">
+                <input type="number" id="num2"><br><br>
             </div>
             <div>
                 <label for="operator">Operator</label><br>
                 <button type="button" name="hitung" onclick="tet1();">+</button>
                 <button type="button" name="hitung" onclick="tet2();">-</button>
                 <button type="button" name="hitung" onclick="tet3();">x</button>
-                <button type="button" name="hitung" onclick="tet4();">/</button>
+                <button type="button" name="hitung" onclick="tet4();">/</button><br><br>
                 <!-- <select id="operator">
                     <option disabled selected>- Pilih -</option>
                     <option value="+">+</option>
