@@ -7,7 +7,7 @@
 <title>Canvas HTML</title>
 </head>
 <body>
-    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid black;"></canvas>
+    <canvas id="myCanvas" width="500" height="500" style="border: 1px solid black;"></canvas>
 
     
 <script>
@@ -50,13 +50,13 @@
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     ctx.beginPath();
-    ctx.moveTo(20,20);
-    ctx.lineTo(280,20);
-    ctx.lineTo(100,200);
-    // ctx.lineTo(20,20);
-    ctx.moveTo(20,20);
-    ctx.lineTo(280,280);
-    ctx.lineTo(200,100);
+    ctx.moveTo(50,160);
+    ctx.lineTo(450,160);
+    ctx.lineTo(60,400);
+    ctx.moveTo(50,160);
+    ctx.lineTo(350,400);
+    ctx.lineTo(260,25);
+    ctx.lineTo(60,400);
     ctx.stroke();
 
 </script>
