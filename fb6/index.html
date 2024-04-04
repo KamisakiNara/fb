@@ -14,6 +14,25 @@
       <link rel="stylesheet" href="assets/css/styles.css">
 
       <title>Responsive cactus website </title>
+      <style>
+         .last-clicked {
+           color: hsl(69, 92%, 55%); /* Ubah warna link terakhir di sini */
+         }
+       </style>
+       <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           var links = document.querySelectorAll("a");
+           links.forEach(function(link) {
+             link.addEventListener("click", function() {
+               var lastClicked = document.querySelector(".last-clicked");
+               if (lastClicked) {
+                 lastClicked.classList.remove("last-clicked");
+               }
+               this.classList.add("last-clicked");
+             });
+           });
+         });
+       </script>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -27,7 +46,7 @@
                   <ul class="nav__list">
 
                      <li class="nav__item">
-                        <a href="#home" class="nav__link active-link ">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                      </li>
 
                      <li class="nav__item">
@@ -205,12 +224,6 @@
                   <li class="care__item">
                      <i class="ri-checkbox-fill"></i>
                      <p>
-                        Improves mood, <br> A study shows that there are chemical changes in the brain after someone eats sweet foods, for example chocolate. Sweet foods can make the brain release the hormone serotonin and help stabilize mood and prevent depression.
-                     </p>
-                  </li>
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
                         Improves Thinking Ability, <br> Glucose is brain fuel, so consuming sweet foods can improve memory, thought processes and concentration.
                      </p>
                   </li>
@@ -273,10 +286,10 @@
 
                <ul class="footer__links">
                   <li>
-                     <a href="#" class="footer__link">About us</a>
+                     <a href="#contact" class="footer__link">About us</a>
                   </li>
                   <li>
-                     <a href="#" class="footer__link">Product</a>
+                     <a href="#shop" class="footer__link">Product</a>
                   </li>
                   <li>
                      <a href="#" class="footer__link">Feature</a>
@@ -291,7 +304,7 @@
                      <a href="#" class="footer__link"> Blogs & News</a>
                   </li>
                   <li>
-                     <a href="#" class="footer__link">Contacts Us</a>
+                     <a href="#contact" class="footer__link">Contacts Us</a>
                   </li>
                   <li>
                      <a href="#" class="footer__link">FAQs</a>
